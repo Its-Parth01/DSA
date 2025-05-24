@@ -11,7 +11,7 @@ assumption and self working: the assumption that the recursive function will wor
 */
 
 // Time complexity of recursion = no of recursive calls * time complexity of each call
-
+// Time complexity if recursion = recursive relation
 
 // FACTORIAL
 
@@ -186,4 +186,31 @@ int main (){
         digit++;
     }
     cout<<f(n, digit);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

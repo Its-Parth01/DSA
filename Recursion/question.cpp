@@ -56,4 +56,3 @@ int main () {
     cout << sum(5) << endl;
 }
 
-

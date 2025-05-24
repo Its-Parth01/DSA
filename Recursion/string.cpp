@@ -51,3 +51,32 @@ int main() {
 // O(n) space complexity because we are using n stack frames
 
 
+
+// subsequence of a string
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+void printSubsequences(string s, string curr, int index) {
+    if (index == s.length()) {
+        cout << curr << " "; // print the current subsequence
+        return;
+    }
+    // include the current character in the subsequence
+    printSubsequences(s, curr + s[index], index + 1);
+    // exclude the current character from the subsequence
+    printSubsequences(s, curr, index + 1);
+}
+int main() {
+    string s;
+    cout << "Enter a string: ";
+    cin >> s;
+    cout << "The subsequences of the string are: ";
+    printSubsequences(s, "", 0); // call the function
+    cout << endl;
+    return 0;
+}
+
+// O(2^n) time complexity because we are making 2^n recursive calls
+// O(n) space complexity because we are using n stack frames
